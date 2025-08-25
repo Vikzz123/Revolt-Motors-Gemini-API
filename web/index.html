@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rev Voice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <header class="top">
+        <h1>Rev Voice</h1>
+        <span id="latency" class="pill">-- ms</span>
+      </header>
+
+      <section class="stage">
+        <canvas id="viz" width="640" height="160" aria-hidden="true"></canvas>
+        <div id="caption" class="caption hidden"></div>
+      </section>
+
+      <section class="controls">
+        <button id="mic" class="mic" aria-label="Hold to talk">
+          <span class="glow"></span>
+          <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+            <path fill="currentColor" d="M12 14a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v5a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21H9v2h6v-2h-2v-3.08A7 7 0 0 0 19 11h-2z"/>
+          </svg>
+        </button>
+        <button id="stop" class="ghost" aria-label="End session">End</button>
+      </section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

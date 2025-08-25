@@ -1,0 +1,23 @@
+{
+  "name": "final-gemini-voice",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "node -r dotenv/config server/index.js",
+    "start": "NODE_ENV=production node -r dotenv/config server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/genai": "^1.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.3"
+  }
+}
